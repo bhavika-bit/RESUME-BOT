@@ -101,7 +101,8 @@ def main():
     st.title("📄Resume Matcher Bot")
     st.subheader("Upload your resume to check matched technical skills")
 
-    resume_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"])
+    resume_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"], key="resume_upload_1")
+
 
     if resume_file:
         # Extract raw text from the resume
