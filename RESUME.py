@@ -17,7 +17,7 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 
 # Load job description dataset
-df = pd.read_excel(r"C:\Users\Jata Bhavika\Desktop\PROJECTS\JOB DESCRIPTION.xlsx")
+df = pd.read_excel(r"JOB DESCRIPTION.xlsx")
 
 technical_skills = ['Python', 'Java', 'Git', 'REST APIs',
     'HTML', 'CSS', 'JavaScript', 'React', 'Angular',
