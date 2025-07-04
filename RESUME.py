@@ -19,6 +19,7 @@ nltk.download('punkt', download_dir=nltk_data_path)
 nltk.download('averaged_perceptron_tagger', download_dir=nltk_data_path)
 nltk.download('stopwords', download_dir=nltk_data_path)
 
+from nltk.tokenize import word_tokenize
 
 # Load job description dataset
 df = pd.read_excel(r"JOB DESCRIPTION.xlsx")
