@@ -1,0 +1,4 @@
+nltk_data/
+*.zip
+*.pyc
+__pycache__/
