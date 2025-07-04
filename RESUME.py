@@ -3,22 +3,25 @@
 import tempfile
 import streamlit as st
 import pandas as pd
-import nltk
+
 import fitz  # PyMuPDF
 import docx2txt
 
+import nltk
+import os
 
-from nltk.tokenize import word_tokenize
-from nltk import pos_tag
-from nltk.corpus import stopwords
+# Set a persistent path
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
+nltk.data.path.append(nltk_data_path)
 
-# Download required NLTK resources
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
+# Download NLTK resources to local folder
+nltk.download('punkt', download_dir=nltk_data_path)
+nltk.download('averaged_perceptron_tagger', download_dir=nltk_data_path)
+nltk.download('stopwords', download_dir=nltk_data_path)
+
 
 # Load job description dataset
-df = pd.read_excel(r"C:\Users\Jata Bhavika\Desktop\PROJECTS\JOB DESCRIPTION.xlsx")
+df = pd.read_excel(r"JOB DESCRIPTION.xlsx")
 
 technical_skills = ['Python', 'Java', 'Git', 'REST APIs',
     'HTML', 'CSS', 'JavaScript', 'React', 'Angular',
