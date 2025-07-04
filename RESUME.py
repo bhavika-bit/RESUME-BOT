@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #RESUME
 import tempfile
 import streamlit as st
@@ -140,7 +140,7 @@ def main():
         st.info("Please upload your resume to proceed.")
 if __name__ == "__main__":
     main()
-=======
+
 #RESUME
 import tempfile
 import streamlit as st
@@ -279,4 +279,4 @@ def main():
         st.info("Please upload your resume to proceed.")
 if __name__ == "__main__":
     main()
->>>>>>> 4ad81e75243f32db1645f90a34d62ce7e6befa4b
+
