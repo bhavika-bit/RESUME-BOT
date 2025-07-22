@@ -101,7 +101,7 @@ def find_matching_job_titles(tokens, df, min_match_count=2):
 
 def main():
     st.set_page_config(page_title="Resume Matcher", layout="wide")
-    st.title("📄Resume Matcher Bot")
+    st.title("📄Resume Matcher")
     st.subheader("Upload your resume to check matched technical skills")
 
     resume_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"], key="resume_upload_1")
